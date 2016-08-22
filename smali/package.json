@@ -1,0 +1,23 @@
+{
+	"name": "smali",
+	"version": "1.0.0",
+	"publisher": "vscode",
+	"engines": { "vscode": "*" },
+	"contributes": {
+		"languages": [{
+			"id": "smali",
+			"extensions": [ ".smali" ],
+			"aliases": [ "Smali", "smali" ],
+			"configuration": "./language-configuration.json"
+		}],
+		"grammars": [{
+			"language": "smali",
+			"scopeName": "source.smali",
+			"path": "./syntaxes/smali.tmLanguage"
+		},
+		{
+			"scopeName": "source.smali.platform",
+			"path": "./grammars/smali.cson"
+		}]
+	}
+}
